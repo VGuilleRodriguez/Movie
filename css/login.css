@@ -1,0 +1,22 @@
+#nombreError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #nombreError.visible {
+    display: block;
+  }
+  
+  input.invalido {
+    border-color: red;
+  }
+
+  .formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}

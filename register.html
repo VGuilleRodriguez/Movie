@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/iconos/Movies_25680.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="https://kit.fontawesome.com/d9ed14eb66.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <title>CaC-Movies - Registro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container p-3">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-film fa-spin"></i> CaC-Movies</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tendencias.html">Tendencias</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" style="color: chocolate;">Inicio de Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+        <form action="" class="formulario" id="formulario">
+            <h1>Formulario de registro</h1>
+           
+            <!-- NOMNRE -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre y Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre no puede contener numeros ni simbolos</p>
+            </div>
+            
+           
+            <!-- FECHA DE NACIMIENTO -->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="birthdate" class="formulario__label">Fecha de nacimiento</label>
+                <div class="formulario__grupo-input">
+                    <input type="date" class="formulario__input" name="birthdate" id="birthdate" placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese solo numeros</p>
+            </div>
+           
+           
+            <!-- REGION -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="country" class="formulario__label">Pais/Region</label>
+                <div class="formulario__grupo-input">
+                    <!-- <input type="country" class="formulario__input" name="country" id="country" placeholder="Pais"> -->
+                    <select class="formulario__input" name="country" id="country">
+                        <option value="">Seleccione un Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="PR">Peru</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="OT">Otro</option>
+                    </select>
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debe seleccionar un pais</p>
+            </div>
+           
+            <!-- EMAIL -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="email" class="formulario__label">Correo Electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="email" id="email"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                    guion bajo.</p>
+            </div>
+           
+                       
+            <!-- PASSWORD -->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+            </div>
+          
+            <!-- PASSWORD 2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Confirmar Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-time-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseña deben ser iguales.</p>
+            </div>
+          
+            <!-- CHECKBOX -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">Acepto terminos y
+                    Condiciones.
+                </label>
+            </div>
+           
+            <!-- MSJ ERROR -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor rellena el formulario</p>
+            </div>
+          
+            <!-- ENVIAR -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="button" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+
+
+        </form>
+    </main>
+
+    <!-- <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="col">
+                    <a href="#"> Preguntas frecuentes</a>
+                </div>
+                <div class="col">
+                    <a href="#"> Ayuda <i class="fas fa-question-circle"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="#">Privacidad</a>
+                </div>
+                <div class="col">
+                    <a href="#">Avisos legales</a>
+                </div>
+                <div class="col">
+                    <a href="#">Contactenos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center mt-5">
+                <p>2024 Rodriguez Guillermo C/24251 - Todos los derechos reservados</p>
+            </div>
+        </div> 
+
+        <!--  <div class="redes-sociales">
+            <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div> -->
+
+    </footer> -->
+
+    <script src="JS/registro.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> -->
+    
+
+</body>
+
+</html>
